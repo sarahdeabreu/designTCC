@@ -1,0 +1,7 @@
+{
+  "name": "designtccApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

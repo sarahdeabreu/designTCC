@@ -1,0 +1,101 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-avatar slot="start" class="avatar">
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+ <ion-card>
+  <ion-searchbar search-icon="search" placeholder="Pesquise aqui"></ion-searchbar>
+
+  <ion-item>
+    <ion-select label="Selecione" placeholder="Seleção de filtros">
+      <ion-select-option value="">Preço mais baixo</ion-select-option>
+      <ion-select-option value="">Preço mais alto</ion-select-option>
+      <ion-select-option value="nes">Produto físico</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-chip>
+    <ion-avatar>
+      <img alt="Silhouette of a person's head" src="data:image/png;base64,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" />
+    </ion-avatar>
+    <ion-label>Veganos</ion-label>
+  </ion-chip>
+  <ion-chip>
+    <ion-avatar>
+      <img alt="Silhouette of a person's head" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Food_Network_New_Logo.png/492px-Food_Network_New_Logo.png" />
+    </ion-avatar>
+    <ion-label>Comidas</ion-label>
+  </ion-chip>
+  <ion-chip>
+    <ion-avatar>
+      <img alt="Silhouette of a person's head" src="https://i1.wp.com/www.freethebunnies.com/wp-content/uploads/2020/01/Artboard_63-512.png?resize=512%2C512&ssl=1" />
+    </ion-avatar>
+    <ion-label>Cosméticos</ion-label>
+  </ion-chip>
+
+
+  <ion-grid>
+  <ion-row>
+    <ion-col><ion-card class="foto">
+  <img alt="produto1" src="assets/cookie.jpg" class="fotoproduto"/>
+</ion-card></ion-col>
+
+<ion-col><ion-card class="foto">
+  <img alt="produto1" src="assets/produto1.jfif" class="fotoproduto"/>
+</ion-card></ion-col>
+
+<ion-col><ion-card class="foto">
+  <img alt="produto1" src="assets/veg.jpg" class="fotoproduto"/>
+</ion-card></ion-col>
+</ion-row>
+</ion-grid>
+</ion-card>
+
+
+
+<ion-card>
+<img src="https://aveganajf.com.br/detalhes/aa65e599691b451b49a08095c13d34c3.png" class="proprincipal"/>
+  <h3 class="texto">Nome do Produto</h3>
+  <h4 class="texto">Informações do Produto | Loja | Preço | Mais Info</h4>
+  <ion-button color="dark">VER MAIS</ion-button>
+</ion-card>
+
+
+
+
+<ion-card>
+  <ion-card-header>
+    <ion-row justify-content-between>
+      <ion-col col-auto>
+        <img src="https://www.wvegan.com.br/wp-content/uploads/destaque-requeijao-produto.png" item-left/>
+      </ion-col>
+      <ion-col>
+        <ion-row text-wrap>
+          <h2>Produto 2 | Informações</h2>
+        </ion-row>
+        <ion-row text-wrap>
+          <p>Loja | Mais Info</p>
+        </ion-row>
+        <ion-row class="buttons">
+          <ion-col>
+            $10.00
+          </ion-col>
+          <ion-col>
+            <ion-button color="dark">COMPRAR</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-card-header>
+</ion-card>
+
+
+
+
+
+</ion-content>
